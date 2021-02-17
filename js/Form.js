@@ -31,19 +31,21 @@ display() {
       this.greeting.position(displayWidth/2 - 375, displayHeight/7);
       this.greeting1.html("To win the game you have to clean up all the trash in the ocean. if you try to clean up something like a fish It won't let you. Did you know that over 70% of earths surface is water and the majority of earths life is aquatic. In real life there is plastic in the ocean. There is a massive island made of plastic in the ocean.")
       this.greeting1.position(displayWidth/2 - 600, displayHeight/3);
-      gameState = 1
+      //gameState = 1
       this.button1.position(displayWidth/2 - 100, displayHeight/2);
     });
 
     this.button1.mousePressed(()=>{
-    this.input.hide();
-    this.button.hide();
+    //this.input.hide();
+    //this.button.hide();
     this.greeting.hide();
     this.greeting1.hide();
-    //game.update(2)
+    this.title.hide();
+    game.update(2)
     //backgroung(scene2img);
     this.button1.hide();
-    gameState = 2;
+    //image(diverimg,displayWidth/2,displayHeight/2);
+    //gameState = 2;
     })
 }
 }

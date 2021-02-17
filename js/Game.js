@@ -27,8 +27,8 @@ class Game {
           form = new Form()
           form.display();
         }
-        if(gameState === 2){
-          background(scene2img);
-          }
+        //if(gameState === 2){
+          //background(scene2img);
+          //}
     }
 }
