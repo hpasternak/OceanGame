@@ -30,7 +30,7 @@ function preload() {
   litter19img=loadImage("images/straw2.png");
   litter20img=loadImage("images/take-out.png");
   litter21img=loadImage("images/tire.png");
-  litter15img=loadImage("images/water-bottle.png");
+  litter22img=loadImage("images/water-bottle.png");
 }
 
 
@@ -45,6 +45,8 @@ function setup() {
  // diver.addImage("diver",diverimg);
   litter1 = createSprite(200, 100, 40, 40);
   litter1.addImage("litter",litter1img);
+  litter1.velocityX = 4
+  litter1.velocityY = 3
   //litter1.visible = false
   littergroup = new Group();
 }
@@ -79,13 +81,18 @@ function draw() {
      image(litter8img,905,185,50,50);
      image(litter9img,1119,282,50,50);
      image(litter10img,923,116,50,50);
-     image(litter11img,);
-     image(litter12img,);
-     image(litter13img,);
-     image(litter14img,);
-     image(litter15img,);
-     image(litter16img,);
-     image(litter17img,);
+     image(litter11img,246,138,50,50);
+     image(litter12img,153,318,50,50);
+     image(litter13img,1371,208,50,50);
+     image(litter14img,690,223,50,50);
+     image(litter15img,918,499,50,50);
+     image(litter16img,375,252,50,50);
+     image(litter17img,324,840,50,50);
+     image(litter18img,727,504,50,50);
+     image(litter19img,79,787,50,50);
+     image(litter20img,968,810,50,50);
+     image(litter21img,613,808,50,50);
+     image(litter22img,1382,431,50,50);
      //if(keyDown("s")){
     //diverimg.x = diverimg.x - 2
     //diverimg.velocityX = -2
@@ -94,6 +101,19 @@ function draw() {
   }
   function keyPressed () {
     if(keyCode === 69) {
-    divery = divery -5
+    divery = divery -15
+    }
+    if(keyCode === 68) {
+    divery = divery +15
+    }
+    if(keyCode === 70) {
+    diverx = diverx +15
+    }
+    if(keyCode === 83) {
+    diverx = diverx -15
+    }
+    if(keyCode === 32) {
+      litter1img.velocityX = 4
+      litter1img.velocityY = 3
     }
   }
